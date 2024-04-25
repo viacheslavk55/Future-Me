@@ -1,0 +1,38 @@
+body,html{
+    height: 100%;
+}
+.black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .navCol {
+    color: #90e0ef;
+  }
+  .fontS {
+    font-size: calc(0.9rem + 1vw);
+    margin-bottom: 0;
+  }
+  .nav-item {
+    transition: transform 0.2s ease-in-out;
+  }
+.teko-robo {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bgimg {
+    background-image: url('images/bgimg.jpg');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
