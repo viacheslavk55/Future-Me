@@ -39,12 +39,19 @@ body,html{
     overflow: hidden;
   }
   .parallax-text {
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     letter-spacing: 10px;
     opacity: 0.8;
-    color: black;
+    color: white;
     white-space: nowrap;
+    /* text-align: center; */
+}
+
+
+.rightDiv {
+  float: right;
+}
+.left-text1 {
+  /*JS EDIT*/
 }
