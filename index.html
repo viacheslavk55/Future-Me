@@ -34,10 +34,16 @@
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
 
   <body class="bg-dark">
@@ -75,13 +81,19 @@
         Computer Science
       </h2>
     </div>
-    <div class="bgimg container-fluid" style="background-image: url('images/bgimg.jpg');">
+    <div
+      class="bgimg container-fluid"
+      style="background-image: url('images/bgimg.jpg')"
+    >
       <div class="parallax-text black-ops-one-regular bg1">
         <h1 class="lineUp">WELCOME!</h1>
       </div>
     </div>
     <div class="container">
       <div class="py-5">
+        <h1 class="bold black-ops-one-regular mb-4" style="color: white">
+          General Information
+        </h1>
         <ul style="color: white">
           <li>
             <p class="russo-one-regular">
@@ -122,42 +134,88 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="bgimg container-fluid text-center" style="background-image: url('images/bgim.jpg');">
-        <div class="row cardEdit">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
 
+      <h1 class="bold black-ops-one-regular mb-4" style="color: white">
+        Work Environment
+      </h1>
+      <div class="row text-center pb-4">
+        <div class="col-4">
+          <div class="cardEffect" onClick="linked1()">
+            <img
+              src="images/work1.png"
+              width="100%"
+              style="border-radius: 5%"
+            />
+            <h3 class="hover-text black-ops-one-regular">
+              Some programmers work in big offices
+            </h3>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cardEffect" onClick="linked2()">
+            <img
+              src="images/work2.jpg"
+              width="100%"
+              style="border-radius: 5%"
+            />
+            <h3 class="hover-text black-ops-one-regular">
+              Most programmers collaborate on projects
+            </h3>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cardEffect" onClick="linked3()">
+            <img
+              src="images/work3.png"
+              width="100%"
+              style="border-radius: 5%"
+            />
+            <h3 class="hover-text black-ops-one-regular">
+              Some programmers work from home
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="bold black-ops-one-regular mt-5 mb-0" style="color: white">
+        Computer Science Explained
+      </h1>
+      <div class="text-center m-3 row">
+        <div class="col-12 col-lg-6 embed-container">
+          <iframe
+            src="https://www.youtube.com/embed/SzJ46YA_RaA?si=tXu6pEtN4V_Tp8Ks"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center p-0">
+          <div class="mh-100">
+<div class="black-ops-one-regular embed-container text-plage"><p class="mt-3"><u>A couple of notes on this video:</u></p>
+            <ol>
+              <li class="my-3">Computer science explores algorithms and data structures to efficiently solve computational problems.</li>
+            
+              <li class="my-3">
+                Cybersecurity in computer science focuses on protecting digital systems, networks, and data from unauthorized access or attacks.
+              </li>
+              <li class="my-3">
+                Artificial intelligence advances computer science by enabling machines to mimic human intelligence, learn from data, and make decisions autonomously.
+              </li>
+            </ol>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="text-center m-5 pb-3">
+        <button class="button" onclick="topFunction()">
+          <span>Back Up</span>
+        </button>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
