@@ -18,3 +18,58 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Education page parallax text
+
+const left1 = document.getElementById('left1')
+const left2 = document.getElementById('left2')
+const left3 = document.getElementById('left3')
+const right1 = document.getElementById('right1')
+const right2 = document.getElementById('right2')
+const right3 = document.getElementById('right3')
+const divCentr = document.getElementById('centers')
+const leftOn = document.getElementsByClassName('leftOn')[0]
+const leftOn2 = document.getElementsByClassName('leftOn')[1]
+const leftOn3 = document.getElementsByClassName('leftOn')[2]
+const rightOn = document.getElementsByClassName('rightOn')[0]
+const rightOn2 = document.getElementsByClassName('rightOn')[1]
+const rightOn3 = document.getElementsByClassName('rightOn')[2]
+
+let aligned = false
+
+window.addEventListener('scroll', function() {
+    const windowScroll = window.scrollY
+    const newPosition = windowScroll / 4
+
+    // Apply parallax effect for left side
+    left1.style.left = newPosition + '%'
+    left2.style.left = (newPosition - 5) + '%'
+    left3.style.left = (newPosition - 10) + '%'
+
+    // Apply parallax effect for right side
+    right1.style.right = newPosition + '%'
+    right2.style.right = (newPosition + 5) + '%'
+    right3.style.right = (newPosition + 10) + '%'
+
+    // Check if elements are aligned and alignment hasn't been set yet
+    if (!aligned && newPosition === 50 ) {
+        divCentr.classList.add('text-center')
+        leftOn.classList.remove('leftOn')
+        leftOn2.classList.remove('leftOn')
+        leftOn3.classList.remove('leftOn')
+        rightOn.classList.remove('rightOn')
+        rightOn2.classList.remove('rightOn')
+        rightOn3.classList.remove('rightOn')
+        aligned = true
+    } else if (windowScroll > 300) {
+        divCentr.classList.add('text-center')
+        leftOn.classList.remove('leftOn')
+        leftOn2.classList.remove('leftOn')
+        leftOn3.classList.remove('leftOn')
+        rightOn.classList.remove('rightOn')
+        rightOn2.classList.remove('rightOn')
+        rightOn3.classList.remove('rightOn')
+        aligned = true
+    }
+});
+

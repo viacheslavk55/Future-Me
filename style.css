@@ -44,12 +44,10 @@ body,html{
     top: 50%;
     letter-spacing: 10px;
     opacity: 0.8;
-    color: white;
     white-space: nowrap;
-    text-align: center;
   }
   .lineUp {
-    animation: 2s anim-lineUp ease-out 1;
+    animation: 4s anim-lineUp ease-out 1;
   }
   @keyframes anim-lineUp {
     0% {
@@ -93,7 +91,7 @@ body,html{
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: ease-in-out 0.2s;
-  font-size: calc(0.4rem + 1.8vw);
+  font-size: calc(2rem + 0.4vw);
 }
 
 /* Show the text when hovering over the container */
@@ -172,4 +170,14 @@ body,html{
 .text-plage {
   color: white;
   font-size: calc(0.4rem + 0.7vw);
+}
+.leftOn {
+  position: absolute;
+}
+.rightOn {
+  position: absolute;
+  right: 0;
+}
+.edited-text {
+  font-size: calc(0.7rem + 1.5vw);
 }
