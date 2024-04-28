@@ -1,6 +1,11 @@
+// links
 const website1 = "https://betterprogramming.pub/why-software-developers-werent-meant-to-work-in-offices-2177421d5fce"
 const website2 = "https://www.freecodecamp.org/news/collaborative-coding-tips/"
 const website3 = "https://arc.dev/talent-blog/benefits-of-working-from-home/"
+const website4 = "https://www.freecodecamp.org/news/how-to-learn-programming/"
+const website5 = "https://www.springboard.com/blog/cybersecurity/how-to-learn-cybersecurity/"
+const website6 = "https://www.datacamp.com/blog/how-to-learn-ai"
+
 function linked1() {
     window.open(website1, '_blank');
 }
@@ -10,6 +15,17 @@ function linked2() {
 function linked3() {
     window.open(website3, '_blank');
 }
+function linked4() {
+    window.open(website4, '_blank');
+}
+function linked5() {
+    window.open(website5, '_blank');
+}
+function linked6() {
+    window.open(website6, '_blank');
+}
+
+
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
@@ -48,8 +64,8 @@ window.addEventListener('scroll', function() {
 
     // Apply parallax effect for right side
     right1.style.right = newPosition + '%'
-    right2.style.right = (newPosition + 5) + '%'
-    right3.style.right = (newPosition + 10) + '%'
+    right2.style.right = (newPosition - 5) + '%'
+    right3.style.right = (newPosition - 10) + '%'
 
     // Check if elements are aligned and alignment hasn't been set yet
     if (!aligned && newPosition === 50 ) {
@@ -61,7 +77,7 @@ window.addEventListener('scroll', function() {
         rightOn2.classList.remove('rightOn')
         rightOn3.classList.remove('rightOn')
         aligned = true
-    } else if (windowScroll > 300) {
+    } else if (windowScroll > 250) {
         divCentr.classList.add('text-center')
         leftOn.classList.remove('leftOn')
         leftOn2.classList.remove('leftOn')
@@ -71,5 +87,5 @@ window.addEventListener('scroll', function() {
         rightOn3.classList.remove('rightOn')
         aligned = true
     }
-});
+})
 
