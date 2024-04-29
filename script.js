@@ -89,3 +89,16 @@ window.addEventListener('scroll', function() {
     }
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+    var element = document.getElementById('cardHover')
+    // Add event listeners for touch events
+    element.addEventListener('touchstart', function() {
+      // Add the hover effect class
+      this.classList.add('cardEffect')
+    })
+  
+    element.addEventListener('touchend', function() {
+      // Remove the hover effect class when touch ends
+      this.classList.remove('cardEffect')
+    })
+  })
