@@ -190,3 +190,23 @@ body,html{
 .carousella:hover {
   box-shadow: 0px 0px 25px 1px #90e0ef;
 }
+
+.grid-pics {
+  border-radius: 2%; 
+  border: 3px solid #90e0ef;
+}
+
+.feedEffect {
+  width: 70%;
+  transition: transform 0.3s ease;
+}
+.feedEffect:hover {
+  transform: scale(1.1);
+}
+#boxx::placeholder {
+  color: white;
+}
+#boxx {
+  width: 50%;
+}
+
